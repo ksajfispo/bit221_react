@@ -22,8 +22,10 @@ function UseCallback02() {
   }, [someFunction]);
   return (
     <div className='container'>
-      <input className='form-control' type={'number'} value = {number} onChange ={(e)=>{setNumber(e.target.value)}} />
-      <button className='btn btn-success' onClick={someFunction} >Call someFunce</button>
+      <input className='form-control' type={'number'} 
+      value = {number} onChange ={(e)=>{setNumber(e.target.value)}} />
+      <button className='btn btn-success' 
+      onClick={someFunction} >Call someFunce</button>
     </div>
   )
 }

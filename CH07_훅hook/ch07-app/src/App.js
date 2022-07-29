@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
-import UseState01 from './hooks/6_useReducer/UseReducer02';
+import UseState01 from './hooks/6_useReducer/UseReducer03';
 
 function App() {
   return (

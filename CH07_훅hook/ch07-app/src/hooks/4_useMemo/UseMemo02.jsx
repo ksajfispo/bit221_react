@@ -11,9 +11,9 @@ const hardCa = (number) => {
   return number + total;
 }
 
-const eastCa = (number) =>{
+const eastCa = (number) => {
   console.log('간단한계산');
-  return number +1;
+  return number + 1;
 }
 
 function UseMemo02() {
@@ -21,7 +21,7 @@ function UseMemo02() {
   const [hardNumber, setHardNumber] = useState(0);
   const [easyNumber, setEasyNumber] = useState(0);
 
-  const hard = useMemo(()=>{
+  const hard = useMemo(() => {
     return hardCa(hardNumber);
   });
 
