@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <p>이름을 입력, 영문 소문자만 사용 가능</p>
+    <form>
+      <input type="text" id="my-textbox">
+
+    </form>
+  </div>
+
+  <script>
+    let myTextbox = document.querySelector("#my-textbox");
+    myTextbox.addEventListener('keypress', checkName,false);
+    function checkName(evt){
+      let charCode = evt.charCode;
+      if(charCode != 0){
+        // 소문자가 아니라면
+        if(charCode < 97 || charCode > 122){
+          evt.preventDefault();
+          alert('영문 소문자만 입력 가능합니다' +"\n" + "charCode" + charCode + "\n") ;
+        }
+      }
+    }
+  </script>
+</body>
+</html>

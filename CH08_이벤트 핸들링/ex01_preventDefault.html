@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>안녕하세요</p>
+  <form>
+    <label for="id-checkbox">체크박스</label>
+    <input type="checkbox" id="id-checkbox">
+    <br />
+    <br />
+    <div id="output-box"></div>
+
+    <script>
+      document.querySelector("#id-checkbox").addEventListener('click',
+      function(event){
+        document.getElementById("output-box").innerHTML
+        +="체크할 권한 없음 로그인 먼저 <br/>";
+        event.preventDefault();
+      },false // ???
+      );
+    </script>
+  </form>
+</body>
+</html>
