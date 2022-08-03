@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   border-radius: 50%;
 `;
 
+/*
 const Mybutton = styled.button`
   color: blueviolet;
   background-color: beige;
@@ -18,13 +19,20 @@ const Mybutton = styled.button`
   margin-left: 10px;
 
 `
+*/
+const SmartButton = styled.button `
+  color: ${props => props.dark ? 'white' : 'dark'};
+background: ${props => props.dark ? 'black' : 'white'};
+border: 1px solid red;
+padding: 5px;
+`
 
 function mainpage() {
   return (
     <Wrapper>
       <div>
         안녕
-        <Mybutton>'^'</Mybutton>
+        <SmartButton dark>dd</SmartButton>
       </div>
     </Wrapper>
   )
